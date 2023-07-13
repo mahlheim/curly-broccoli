@@ -11,6 +11,10 @@ Cat.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    name: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     breed: {
       type: DataTypes.STRING,
       allowNull: false,
