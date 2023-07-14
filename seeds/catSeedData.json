@@ -1,53 +1,62 @@
 [
     {
-      "name": "",
-      "breed": "",
-      "weight": "",
-      "coat_color": ""
+      "name": "Fluffy",
+      "breed": "Persian",
+      "weight": "12 lbs",
+      "coat_color": "white"
     },
     {
-      "breed": "",
-      "weight": "",
-      "coat_color": ""
+      "name": "Waffles",
+      "breed": "American Shorthair",
+      "weight": "9 lbs",
+      "coat_color": "grey"
     },
     {
-      "breed": "",
-      "weight": "",
-      "coat_color": ""
+      "name": "Milkshake",
+      "breed": "Scottish Fold",
+      "weight": "10 lbs",
+      "coat_color": "white, black, and orange"
     },
     {
-      "breed": "",
-      "weight": "",
-      "coat_color": ""
+      "name": "Mitten",
+      "breed": "Ragdoll",
+      "weight": "9 lbs",
+      "coat_color": "white and grey"
     },
     {
-      "breed": "",
-      "weight": "",
-      "coat_color": ""
+      "name": "Queenie",
+      "breed": "Burmese Cat",
+      "weight": "8 lbs",
+      "coat_color": "brown"
     },
     {
-      "breed": "",
-      "weight": "",
-      "coat_color": ""
+      "name": "Olly",
+      "breed": "Sphynx",
+      "weight": "8 lbs",
+      "coat_color": "white and grey"
     },
      {
-      "breed": "",
-      "weight": "",
-      "coat_color": ""
+      "name": "Salem",
+      "breed": "British Shorthair",
+      "weight": "12 lbs",
+      "coat_color": "black"
     },
     {
-      "breed": "",
-      "weight": "",
-      "coat_color": ""
+      "name": "Squid",
+      "breed": "Abyssinian",
+      "weight": "9 lbs",
+      "coat_color": "brown"
     },
     {
-      "breed": "",
-      "weight": "",
-      "coat_color": ""
+      "name": "Felix",
+      "breed": "Siamese",
+      "weight": "11 lbs",
+      "coat_color": "white and brown"
     },
     {
-      "breed": "",
-      "weight": "",
-      "coat_color": ""
+      "name": "Luna",
+      "breed": "British Shorthair",
+      "weight": "11 lbs",
+      "coat_color": "grey"
     }
   ]
