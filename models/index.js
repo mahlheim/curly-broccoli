@@ -1,6 +1,6 @@
-const Location = require('./Location');
-const Cat = require('./Cat');
-const Dog = require('./Dog');
+const Location = require('./Location.js');
+const Cat = require('./Cat.js');
+const Dog = require('./Dog.js');
 
 Location.hasMany(Cat, {
   foreignKey: 'location_id',
