@@ -1,53 +1,63 @@
+
 [
-    {
-      "name": "",
-      "breed": "",
-      "weight": "",
-      "coat_color": ""
-    },
-    {
-      "breed": "",
-      "weight": "",
-      "coat_color": ""
-    },
-    {
-      "breed": "",
-      "weight": "",
-      "coat_color": ""
-    },
-    {
-      "breed": "",
-      "weight": "",
-      "coat_color": ""
-    },
-    {
-      "breed": "",
-      "weight": "",
-      "coat_color": ""
-    },
-    {
-      "breed": "",
-      "weight": "",
-      "coat_color": ""
-    },
-     {
-      "breed": "",
-      "weight": "",
-      "coat_color": ""
-    },
-    {
-      "breed": "",
-      "weight": "",
-      "coat_color": ""
-    },
-    {
-      "breed": "",
-      "weight": "",
-      "coat_color": ""
-    },
-    {
-      "breed": "",
-      "weight": "",
-      "coat_color": ""
-    }
-  ]
+  {
+    "name": "Charlie",
+    "breed": "Chihuahua",
+    "weight": "7 lbs",
+    "coat_color": "brown, black, and white"
+  },
+  {
+    "name": "Kuma",
+    "breed": "Tibetan Mastiff",
+    "weight": "130 lbs",
+    "coat_color": "black and brown"
+  },
+  {
+    "name": "Buddy",
+    "breed": "Border Collie",
+    "weight": "45 lbs",
+    "coat_color": "black and white"
+  },
+  {
+    "name": "Max",
+    "breed": "Rottweiler",
+    "weight": "115 lbs",
+    "coat_color": "black and brown"
+  },
+  {
+    "name": "Daisy",
+    "breed": "Pomeranian",
+    "weight": "8 lbs",
+    "coat_color": "light brown"
+  },
+  {
+    "name": "Romeo",
+    "breed": "Jack Russell Terrier",
+    "weight": "17 lbs",
+    "coat_color": "brown and white"
+  },
+   {
+    "name": "Lucky",
+    "breed": "Golden Retriever",
+    "weight": "70 lbs",
+    "coat_color": "golden"
+  },
+  {
+    "name": "Mochi",
+    "breed": "Chow Chow",
+    "weight": "60 lbs",
+    "coat_color": "light brown"
+  },
+  {
+    "name": "Sugar",
+    "breed": "American Eskimo Dog",
+    "weight": "35 lbs",
+    "coat_color": "white"
+  },
+  {
+    "name": "Blue",
+    "breed": "Siberian Husky",
+    "weight": "55 lbs",
+    "coat_color": "black and white"
+  }
+]

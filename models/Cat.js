@@ -20,7 +20,7 @@ Cat.init(
       allowNull: false,
     },
     weight: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     coat_color: {
