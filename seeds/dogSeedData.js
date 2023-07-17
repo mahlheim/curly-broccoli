@@ -1,5 +1,6 @@
+const { Dog } = require('../models');
 
-[
+const dogData = [
   {
     "name": "Charlie",
     "breed": "Chihuahua",
@@ -79,5 +80,9 @@
     "coat_color": "black and white",
     "arrival_date": "June 30, 2023",
     "filename": "blue.jpg"
-  }
-]
+  },
+];
+
+const seedDogs = () => Dog.bulkCreate(dogData);
+
+module.exports = seedDogs;

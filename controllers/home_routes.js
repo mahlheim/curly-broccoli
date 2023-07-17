@@ -9,11 +9,11 @@ router.get('/', async (req, res) => {
       include: [
         {
           model: Cat,
-          attributes: ['name', 'breed'],
+          attributes: ['name', 'filename'],
         },
         {
             model: Dog,
-            attributes: ['name', 'breed'],
+            attributes: ['name', 'filename'],
         },
       ],
     });
@@ -44,6 +44,8 @@ router.get('/location/:id', withAuth, async (req, res) => {
             'breed',
             'weight',
             'coat_color',
+            'arrival_date',
+            'filename'
           ],
         },
         {
@@ -53,6 +55,8 @@ router.get('/location/:id', withAuth, async (req, res) => {
                 'breed',
                 'weight',
                 'coat_color',
+                'arrival_date',
+                'filename'
             ]
         },
       ],

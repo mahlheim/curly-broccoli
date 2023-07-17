@@ -1,4 +1,6 @@
-[
+const { Cat } = require('../models');
+
+const catData = [
     {
       "name": "Fluffy",
       "breed": "Persian",
@@ -78,5 +80,9 @@
       "coat_color": "grey",
       "arrival_date": "July 13, 2023",
       "filename": "luna.jpg"
-    }
-  ]
+    },
+  ];
+
+  const seedCats = () => Cat.bulkCreate(catData);
+
+  module.exports = seedCats;
