@@ -20,8 +20,16 @@ Location.init(
       allowNull: false,
     },
     state: {
-        type: DataTypes.STRING,
-        allowNull: false,
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
+    opening_time: {
+      type: DataTypes.DATE,
+      allowNull: false,
+    },
+    closing_time: {
+      type: DataTypes.DATE,
+      allowNull: false,
     },
   },
   {

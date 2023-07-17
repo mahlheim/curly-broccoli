@@ -73,7 +73,7 @@ router.get('/cat/:id', withAuth, async (req, res) => {
 
     const cat = dbCatData.get({ plain: true });
 
-    res.render('cat', { cat, loggedIn: req.session.loggedIn });
+    res.render('Kitties', { cat, loggedIn: req.session.loggedIn });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
@@ -87,7 +87,7 @@ router.get('/dog/:id', withAuth, async (req, res) => {
   
       const dog = dbDogData.get({ plain: true });
   
-      res.render('dog', { dog, loggedIn: req.session.loggedIn });
+      res.render('Doggy', { dog, loggedIn: req.session.loggedIn });
     } catch (err) {
       console.log(err);
       res.status(500).json(err);

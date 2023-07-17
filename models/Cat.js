@@ -27,6 +27,14 @@ Cat.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    arrival_date: {
+      type: DataTypes.DATE,
+      allowNull: false,
+    },
+    filename: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     location_id: {
       type: DataTypes.INTEGER,
       references: {
