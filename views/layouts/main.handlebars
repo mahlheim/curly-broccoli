@@ -1,10 +1,18 @@
-<div>
-  <title>FurEver Home Homepage</title>
-  <link rel="stylesheet" href="/styles.css">
-</div>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FurEver Home</title>
+  <link rel="stylesheet" type="text/css" href="">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+
 <body>
   <header>
     <h1>Welcome to FurEver Home</h1>
+  </header>
     <nav>
       <ul>
         <li><a href="/">Home</a></li>
@@ -20,7 +28,7 @@
         </li>
       </ul>
     </nav>
-  </header>
+  
 
   <main>
     <section class="hero">
@@ -34,31 +42,34 @@
 
     <section class="featured-pets">
       <h2>Featured Cuties!</h2>
-    <div class="cat">
-    <img src="/images/{{cat.filename}}" alt="{{cat.name}}">
+  <div class="cat">
+    <img src="/images/fluffy.jpg" alt="Fluffy">
     <div class="cat-details">
-      <h3>{{cat.name}}</h3>
-      <p>{{cat.location}}</p>
-    </div>
-    <img src="/images/{{cat.filename}}" alt="{{cat.name}}">
-    <div class="cat-details">
-      <h3>{{cat.name}}</h3>
-      <p>{{cat.location}}</p>
-    </div>
+      <h3>Fluffy</h3>
+      <p>Fluffy is in {{cats.[0].location}}</p>
     </div>
 
-    <div class="dog">
+    <img src="/images/queen.jpg" alt="Queenie">
+    <div class="cat-details">
+      <h3>Queenie</h3>
+      <p>{{cat.location}}</p>
+    </div>
+  </div>
+
+  <div class="dog">
     <img src="/images/{{dog.filename}}" alt="{{dog.name}}">
     <div class="dog-details">
       <h3>{{dog.name}}</h3>
       <p>{{dog.location}}</p>
     </div>
+
     <img src="/images/{{dog.filename}}" alt="{{dog.name}}">
     <div class="dog-details">
       <h3>{{dog.name}}</h3>
       <p>{{dog.location}}</p>
     </div>
-    </div>
+  </div>
+
     </section>
   </main>
  {{#if loggedIn}}

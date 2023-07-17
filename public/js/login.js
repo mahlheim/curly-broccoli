@@ -14,7 +14,7 @@ const loginFormHandler = async (event) => {
       if (response.ok) {
         document.location.replace('/profile');
       } else {
-        alert('Login failed. Please check your credentials.');
+        alert('Login failed. Please try again.');
       }
     }
   };
