@@ -1,4 +1,4 @@
-const { Gallery } = require('../models'); 
+const { Location } = require('../models'); 
 
 const locationData = [
     {

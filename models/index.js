@@ -1,6 +1,7 @@
-const Location = require('./Location.js');
-const Cat = require('./Cat.js');
-const Dog = require('./Dog.js');
+const User = require('./User');
+const Location = require('./Location');
+const Cat = require('./Cat');
+const Dog = require('./Dog');
 
 Location.hasMany(Cat, {
   foreignKey: 'location_id',
@@ -8,9 +9,9 @@ Location.hasMany(Cat, {
 });
 
 Location.hasMany(Dog, {
-    foreignKey: 'location_id',
-    onDelete: 'CASCADE',
-  });
+  foreignKey: 'location_id',
+  onDelete: 'CASCADE',
+});
 
 Cat.belongsTo(Location, {
   foreignKey: 'location_id',
@@ -20,4 +21,4 @@ Dog.belongsTo(Location, {
   foreignKey: 'location_id',
 });
 
-module.exports = { Location, Cat, Dog };
+module.exports = { User, Location, Cat, Dog };
