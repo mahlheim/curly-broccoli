@@ -17,16 +17,12 @@ const fetchUserProfile = async () => {
 // Function to display the user profile data on the page
 const displayUserProfile = (profile) => {
   const usernameElement = document.querySelector('.username');
-  const nameElement = document.querySelector('.name');
   const emailElement = document.querySelector('.email');
-  const locationElement = document.querySelector('.location');
-  const bioElement = document.querySelector('.bio');
+  const passwordElement = document.querySelector('.password');
 
   usernameElement.textContent = profile.username;
-  nameElement.textContent = profile.name;
   emailElement.textContent = profile.email;
-  locationElement.textContent = profile.location;
-  bioElement.textContent = profile.bio;
+  passwordElement.textContent = profile.password;
 };
 
 // Call fetchUserProfile when the page loads
