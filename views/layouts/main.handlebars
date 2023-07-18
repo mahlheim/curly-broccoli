@@ -42,34 +42,18 @@
 
     <section class="featured-pets">
       <h2>Featured Cuties!</h2>
-  <div class="cat">
-    <img src="/images/fluffy.jpg" alt="Fluffy">
-    <div class="cat-details">
-      <h3>Fluffy</h3>
-      <p>Fluffy is in {{cats.[0].location}}</p>
-    </div>
-
-    <img src="/images/queen.jpg" alt="Queenie">
-    <div class="cat-details">
-      <h3>Queenie</h3>
-      <p>{{cat.location}}</p>
-    </div>
-  </div>
-
-  <div class="dog">
-    <img src="/images/{{dog.filename}}" alt="{{dog.name}}">
-    <div class="dog-details">
-      <h3>{{dog.name}}</h3>
-      <p>{{dog.location}}</p>
-    </div>
-
-    <img src="/images/{{dog.filename}}" alt="{{dog.name}}">
-    <div class="dog-details">
-      <h3>{{dog.name}}</h3>
-      <p>{{dog.location}}</p>
-    </div>
-  </div>
-
+  <div class="slider-wrapper">
+        <div class="slider">
+          <img id="slide-1" src="/public/images/cat_images/fluffy.jpg" alt="Fluffy">
+          <img id="slide-2" src="https://www.rd.com/wp-content/uploads/2019/09/Cute-cat-lying-on-his-back-on-the-carpet.-Breed-British-mackerel-with-yellow-eyes-and-a-bushy-mustache.-Close-up-e1573490045672.jpg" alt="Waffles">
+          <img id="slide-3" src="https://media.alwayspets.com/e6/14/e614c47d95c440d399c2c1bc26458b38.jpeg" alt="Olly">
+        </div>
+        <div class="slider-nav">
+          <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+          <a href="#slide-3"></a>
+        </div>
+        </div>
     </section>
   </main>
  {{#if loggedIn}}
