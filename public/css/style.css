@@ -1,36 +1,52 @@
-
-
-
-
-----------------------------------------------------------------------
-
 *, *::before, *::after {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
 } 
 
-h1 span{
-    color: blue;
-    font-family: 'Dancing Script', cursive;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-nav {
-    background-color: antiquewhite;
-    font-size: 25px;
-    text-decoration: none;
+header img {
+  width: 100px;
+  height: 100px;
+}
+
+h1 {
+  font-size: 200%;
+}
+
+h1 span {
+  color: blue;
+  font-family: 'Dancing Script', cursive;
+  font-size: 150%;
+}
+
+h2 span {
+  font-family: 'Dancing Script', cursive;
+  font-size: 120%;
+}
+
+nav .nav_btns {
+  display: flex;
+  position: relative;
+  font-size: 30px;
+  align-self: self-end;
+
 }
 
 body {
     margin: 0;
 }
 
-.container {
-    padding: 2rem;
-}
-
 .slider-wrapper {
     position: relative;
-    max-width: 25rem;
+    display: flex;
+    max-width: 30rem;
     margin-left: 10px;
 }
 
@@ -48,6 +64,13 @@ body {
     flex: 1 0 100%;
     scroll-snap-align: start;
     object-fit: cover;
+}
+
+.slide-1,
+.slide-2 {
+  position: absolute;
+  top: 0;
+  padding: 15px 30px;
 }
 -------------------------------------
 .dogs {
@@ -77,7 +100,7 @@ body {
 }
 -----------------------------
   /* CARDS */
-  /*.card {
+  .card {
     margin: 20px;
     flex: 0 1 300px;
     border: 7px double var(--dark);
