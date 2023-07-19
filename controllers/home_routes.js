@@ -30,6 +30,7 @@ router.get('/', async (req, res) => {
 
 // get one location, using the custom middleware before allowing the user to access the location
 router.get('/location/:id', withAuth, async (req, res) => {
+  console.log('in location/id route');
   try {
     const dbLocationData = await Location.findByPk(req.params.id, {
       include: [
@@ -53,7 +54,7 @@ router.get('/location/:id', withAuth, async (req, res) => {
                 'coat_color',
                 'arrival_date',
                 'filename'
-            ]
+            ],
         },
       ],
     });
@@ -68,6 +69,7 @@ router.get('/location/:id', withAuth, async (req, res) => {
 
 // get one cat, using the custom middleware before allowing the user to access the cat
 router.get('/cat/:id', withAuth, async (req, res) => {
+  console.log('in the cat id route');
   try {
     const dbCatData = await Cat.findByPk(req.params.id);
 
