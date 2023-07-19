@@ -30,7 +30,5 @@ Please refer to https://opensource.org/license/mit/ for more details.
 N/A
 
 ## Questions
-Contact Katie on [GitHub](https://github.com/C-Bolick)!
-Contact Reagan on [GitHub](https://github.com/Reyyahs)!
-Contact me on [GitHub](https://github.com/mahlheim)!
+Contact [Katie](https://github.com/C-Bolick), [Reagan](https://github.com/Reyyahs), or [me](https://github.com/mahlheim) on GitHub! 
 
