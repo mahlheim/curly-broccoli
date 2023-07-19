@@ -66,43 +66,6 @@ body {
     object-fit: cover;
 }
 
-<<<<<<< HEAD
-.slide-1,
-.slide-2 {
-  position: absolute;
-  top: 0;
-  padding: 15px 30px;
-}
--------------------------------------
-.dogs {
-  width: 50%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px;
-}
-
-.dog-details {
-  text-align: center;
-  padding: 10px 20px;
-  font-weight: bold;
-}
-
-.cats {
-  width: 50%;
-  background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 25px;
-}
-
-.cat-details {
-  text-align: center;
-  padding: 10px 20px;
-  font-weight: bold;
-}
------------------------------
-=======
-----------------
->>>>>>> c97acd7ac3c0fc4fa408e880e4d209f258247dd4
   /* CARDS */
   .card {
     margin: 20px;
