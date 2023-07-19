@@ -12,8 +12,8 @@ header {
 }
 
 header img {
-  width: 100px;
-  height: 100px;
+  width: 300px;
+  height: 150px;
 }
 
 h1 {
@@ -21,7 +21,7 @@ h1 {
 }
 
 h1 span {
-  color: blue;
+  color: red;
   font-family: 'Dancing Script', cursive;
   font-size: 150%;
 }
@@ -44,7 +44,7 @@ body {
 
 .slider {
   display: flex;
-  aspect-ratio: 10/9;
+  aspect-ratio: 7/7;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
@@ -60,15 +60,13 @@ body {
   max-height: 100%;
 }
 
-/* */
-
 :root {
-  --primary: #1946fd;
-  --secondary: #acf8fd;
-  --tertiary: #51d5f7;
-  --quatrinary: #7e97f8;
-  --light: #f1f8b0;
-  --dark: #4467f7;
+  --primary: #faf4ed;
+  --secondary: #faf4ed;
+  --tertiary: #faf4ed;
+  --quatrinary: #faeded;
+  --light: black;
+  --dark:#faeded;
   --error: rgb(228, 46, 1);
   --border-radius: 0.3rem;
 }
@@ -126,8 +124,8 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--secondary);
-  background-color: var(--dark);
+  color: black;
+  background-color: #faeded;
 }
 
 .location {
