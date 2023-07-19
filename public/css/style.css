@@ -66,6 +66,7 @@ body {
     object-fit: cover;
 }
 
+<<<<<<< HEAD
 .slide-1,
 .slide-2 {
   position: absolute;
@@ -99,6 +100,9 @@ body {
   font-weight: bold;
 }
 -----------------------------
+=======
+----------------
+>>>>>>> c97acd7ac3c0fc4fa408e880e4d209f258247dd4
   /* CARDS */
   .card {
     margin: 20px;

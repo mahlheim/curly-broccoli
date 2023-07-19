@@ -1,6 +1,6 @@
 module.exports = {
-  format_time: (date) => {
-    return date.toString();
+  format_time: (time) => {
+    return time.toString();
   },
   format_date: (date) => {
     return date.toLocaleDateString('en-US');
