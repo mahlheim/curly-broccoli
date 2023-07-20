@@ -1,7 +1,7 @@
 // Function to fetch and display the user profile
 const fetchUserProfile = async () => {
   try {
-    const response = await fetch('/api/profile');
+    const response = await fetch('/api/users/profile');
     if (response.ok) {
       const profile = await response.json();
       displayUserProfile(profile);
