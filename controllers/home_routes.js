@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Location, Cat, Dog } = require('../models');
+const { Location, Cat, Dog, User } = require('../models');
 const withAuth = require('../utils/auth');
 
 // get all locations for homepage
@@ -41,7 +41,8 @@ router.get('/location/:id', withAuth, async (req, res) => {
             'weight',
             'coat_color',
             'arrival_date',
-            'filename'
+            'filename',
+            'id'
           ],
         },
         {
@@ -52,7 +53,8 @@ router.get('/location/:id', withAuth, async (req, res) => {
             'weight',
             'coat_color',
             'arrival_date',
-            'filename'
+            'filename',
+            'id'
           ],
         },
       ],
@@ -93,6 +95,20 @@ router.get('/dog/:id', withAuth, async (req, res) => {
       res.status(500).json(err);
     }
   });
+
+  // get user, using the custom middleware before allowing the user to access the profile
+router.get('/user/:id', withAuth, async (req, res) => {
+  try {
+    const dbUserData = await User.findByPk(req.params.id);
+
+    const user = dbUserData.get({ plain: true });
+
+    res.render('profile', { user, loggedIn: req.session.loggedIn });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
 
 // login page
 router.get('/login', (req, res) => {

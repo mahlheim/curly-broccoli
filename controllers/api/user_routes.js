@@ -59,20 +59,6 @@ router.post('/login', async (req, res) => {
   }
 });
 
-// view profile
-router.get('/profile/:id', async (req, res) => {
-  try {
-    const dbUserData = await User.findByPk(req.params.id);
-
-    const user = dbUserData.get({ plain: true });
-
-    res.render('profile', { user, loggedIn: req.session.loggedIn });
-  } catch (err) {
-    console.log(err);
-    res.status(500).json(err);
-  }
-});
-
 // logout
 router.post('/logout', (req, res) => {
   if (req.session.loggedIn) {
