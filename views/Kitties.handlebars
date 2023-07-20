@@ -1,12 +1,14 @@
 <section class="cats">
-  <img src="/images/cat_image/{{cat.filename}}" alt="{{cat.name}}">
+  <img src="/images/cat_images/{{cat.filename}}" alt="{{cat.name}}">
   <div class="cat-details">
     <h3>{{cat.name}}</h3>
+    <br>
     <p>About this cutie pie:</p>
-    <p>Name: {{cat.name}}</p>
-    <p>Breed: {{cat.breed}}</p>
-    <p>Weight: {{cat.weight}}</p>
-    <p>Coat Color: {{cat.coat_color}}</p>
-    <p>Date of Arrival: {{format_date cat.arrival_date}}</p>
+    <br>
+    <p>BREED: {{cat.breed}}</p>
+    <p>WEIGHT: {{cat.weight}}</p>
+    <p>COAT COLOR: {{cat.coat_color}}</p>
+    <p>DATE OF ARRIVAL: {{format_date cat.arrival_date}}</p>
+    <p>Stop by during operating hours to meet {{cat.name}}!</p>
   </div>
 </section>

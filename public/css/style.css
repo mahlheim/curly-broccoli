@@ -1,8 +1,8 @@
 *, *::before, *::after {
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
 } 
 
 header {
@@ -21,7 +21,7 @@ h1 {
 }
 
 h1 span {
-  color: red;
+  color: var(--secondary);
   font-family: 'Dancing Script', cursive;
   font-size: 150%;
 }
@@ -31,15 +31,12 @@ h2 span {
   font-size: 120%;
 }
 
-body {
-    margin: 0;
-}
-
 .slider-wrapper {
   position: relative;
   display: flex;
   max-width: 30rem;
   margin-left: 10px;
+  flex-wrap: wrap;
 }
 
 .slider {
@@ -52,7 +49,7 @@ body {
   border-radius: 0.5rem;
 }
 
-.slider img{
+.slider img {
   flex: 1 0 100%;
   scroll-snap-align: start;
   object-fit: cover;
@@ -61,12 +58,12 @@ body {
 }
 
 :root {
-  --primary: #faf4ed;
-  --secondary: #faf4ed;
-  --tertiary: #faf4ed;
-  --quatrinary: #faeded;
-  --light: black;
-  --dark:#faeded;
+  --primary: #0dedfd;
+  --secondary: #acf8fd;
+  --tertiary: #51d5f7;
+  --quatrinary: #25d3ff;
+  --light: rgb(250, 240, 151);
+  --dark: #00abb8;
   --error: rgb(228, 46, 1);
   --border-radius: 0.3rem;
 }
@@ -93,8 +90,11 @@ a:visited {
 header {
   padding: 40px;
   text-align: center;
-  background: var(--primary);
-  color: var(--light);
+  background: var(--dark);
+  color: var(--primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 main {
@@ -113,7 +113,8 @@ aside {
 
 nav {
   display: flex;
-  background-color: var(--secondary);
+  background-color: var(--dark);
+  font-size: 25px;
 }
 
 nav a {
@@ -155,9 +156,9 @@ img {
   height: auto;
 }
 
-.cat {
+.cats {
   width: 50%;
-  background-color: white;
+  background-color: var(--light);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 25px;
 }
@@ -166,11 +167,12 @@ img {
   text-align: center;
   padding: 10px 20px;
   font-weight: bold;
+  width: auto;
 }
 
-.dog {
+.dogs {
   width: 50%;
-  background-color: white;
+  background-color: var(--light);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 25px;
 }
@@ -179,6 +181,12 @@ img {
   text-align: center;
   padding: 10px 20px;
   font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(250, 240, 151);
 }
 
 /* CARDS */
@@ -200,8 +208,8 @@ img {
   border-radius: var(--border-radius);
   border-style: double;
   border-width: thick;
-  background-color: #577a7c;
-  color: var(--light);
+  background-color: var(--light);
+  color: var(--dark);
 }
 
 .card header {
@@ -238,3 +246,4 @@ img {
   align-content: flex-start;
   align-items: center;
 }
+

@@ -45,15 +45,15 @@ router.get('/location/:id', withAuth, async (req, res) => {
           ],
         },
         {
-            model: Dog,
-            attributes: [
-                'name',
-                'breed',
-                'weight',
-                'coat_color',
-                'arrival_date',
-                'filename'
-            ],
+          model: Dog,
+          attributes: [
+            'name',
+            'breed',
+            'weight',
+            'coat_color',
+            'arrival_date',
+            'filename'
+          ],
         },
       ],
     });
