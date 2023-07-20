@@ -21,6 +21,7 @@ router.get('/', async (req, res) => {
     res.render('homepage', {
       locations,
       loggedIn: req.session.loggedIn,
+      userID: req.session.userID
     });
   } catch (err) {
     console.log(err);
@@ -103,7 +104,7 @@ router.get('/user/:id', withAuth, async (req, res) => {
 
     const user = dbUserData.get({ plain: true });
 
-    res.render('profile', { user, loggedIn: req.session.loggedIn });
+    res.render('profile', { user, loggedIn: req.session.loggedIn, userID: req.session.userID });
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
