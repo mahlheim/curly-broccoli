@@ -86,7 +86,7 @@ router.get('/cat/:id', withAuth, async (req, res) => {
 // get one dog, using the custom middleware before allowing the user to access the dog
 router.get('/dog/:id', withAuth, async (req, res) => {
     try {
-      const dbDogData = await Painting.findByPk(req.params.id);
+      const dbDogData = await Dog.findByPk(req.params.id);
   
       const dog = dbDogData.get({ plain: true });
   
